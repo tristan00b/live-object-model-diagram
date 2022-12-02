@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Object Model v11.1</title>
+  <style>
+      :root {
+        --background-dk:#222;
+        --background-lt:white;
+      }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--background-lt);
+    }
+
+    object {
+      max-height:100vh;
+    }
+
+    @media (prefers-color-scheme:dark) {
+      body {
+        background-color: var(--background-dk);
+      }
+    }
+  </style>
+</head>
+<body>
+  <object data="LOM-v11.1.svg" type="image/svg+xml"></object>
+</body>
+</html>

@@ -1,0 +1,995 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:serif="http://www.serif.com/"
+  xml:space="preserve"
+  preserveAspectRatio="xMidYMid slice"
+  viewBox="0 0 16000 9000"
+  role="img">
+  <defs>
+    <!--title text-->
+    <text id="legend-title" class="text--title">LEGEND</text>
+    <!--sans text-->
+    <text id="DeviceParameter" class="text--sans">DeviceParameter</text>
+    <text id="MixerDevice" class="text--sans">MixerDevice</text>
+    <text id="ChainMixerDevice" class="text--sans">ChainMixerDevice</text>
+    <text id="DrumPad" class="text--sans">DrumPad</text>
+    <text id="DrumChain" class="text--sans">DrumChain</text>
+    <text id="Chain" class="text--sans">Chain</text>
+    <text id="RackDeviceView" class="text--sans">RackDeviceView</text>
+    <text id="RackDevice" class="text--sans">RackDevice</text>
+    <text id="Eq8DeviceView" class="text--sans">Eq8DeviceView</text>
+    <text id="Eq8Device" class="text--sans">Eq8Device</text>
+    <text id="Sample" class="text--sans">Sample</text>
+    <text id="SimplerDeviceView" class="text--sans">SimplerDeviceView</text>
+    <text id="SimplerDevice" class="text--sans">SimplerDevice</text>
+    <text id="DeviceIO" class="text--sans">DeviceIO</text>
+    <text id="MaxDevice" class="text--sans">MaxDevice</text>
+    <text id="PluginDevice" class="text--sans">PluginDevice</text>
+    <text id="HybridReverbDevice" class="text--sans">HybridReverbDevice</text>
+    <text id="CompressorDevice" class="text--sans">CompressorDevice</text>
+    <text id="SpectralResonatorDevice" class="text--sans">SpectralResonatorDevice</text>
+    <text id="WavetableDevice" class="text--sans">WavetableDevice</text>
+    <text id="DeviceView" class="text--sans">DeviceView</text>
+    <text id="Device" class="text--sans">Device</text>
+    <text id="ClipView" class="text--sans">ClipView</text>
+    <text id="Clip" class="text--sans">Clip</text>
+    <text id="ClipSlot" class="text--sans">ClipSlot</text>
+    <text id="Track" class="text--sans">Track</text>
+    <text id="TrackView" class="text--sans">TrackView</text>
+    <text id="Scene" class="text--sans">Scene</text>
+    <text id="GroovePool" class="text--sans">GroovePool</text>
+    <text id="Groove" class="text--sans">Groove</text>
+    <text id="CuePoint" class="text--sans">CuePoint</text>
+    <text id="SongView" class="text--sans">SongView</text>
+    <text id="Song" class="text--sans">Song</text>
+    <text id="ApplicationView" class="text--sans">ApplicationView</text>
+    <text id="Application" class="text--sans">Application</text>
+    <text id="ControlSurface" class="text--sans">ControlSurface</text>
+    <text id="MasterTrack" class="text--sans">Master Track</text>
+    <text id="DrumRacks" class="text--sans">Drum Racks</text>
+    <text id="AIDR" class="text--sans">Audio, Instruments &amp; Drum Racks</text>
+    <text id="APIClassName" class="text--sans">API Class Name</text>
+    <text id="SpecialPaths" class="text--sans text--heading">Paths only accessible from:</text>
+    <text id="ReferencePaths" class="text--sans text--heading">Reference Paths</text>
+    <text id="CanonicalPaths" class="text--sans text--heading">Canoncial Paths</text>
+    <text id="LiveObjectClasses" class="text--sans text--heading">Live Object Classes</text>
+    <!--monospace text-->
+    <text id="track_activator" class="text--mono">track_activator</text>
+    <text id="left_split_stereo" class="text--mono">left_split_stereo</text>
+    <text id="right_split_stereo" class="text--mono">right_split_stereo</text>
+    <text id="cue_volume" class="text--mono">cue_volume</text>
+    <text id="song_tempo" class="text--mono">song_tempo</text>
+    <text id="crossfader" class="text--mono">crossfader</text>
+    <text id="sends" class="text--mono">sends</text>
+    <text id="volume" class="text--mono">volume</text>
+    <text id="panning" class="text--mono">panning</text>
+    <text id="chain_activator" class="text--mono">chain_activator</text>
+    <text id="chains" class="text--mono">chains</text>
+    <text id="mixer_device" class="text--mono">mixer_device</text>
+    <text id="devices" class="text--mono">devices</text>
+    <text id="selected_drum_pad" class="text--mono">selected_drum_pad</text>
+    <text id="return_chains" class="text--mono">return_chains</text>
+    <text id="chains" class="text--mono">chains</text>
+    <text id="drum_pads" class="text--mono">drum_pads</text>
+    <text id="visible_drum_pads" class="text--mono">visible_drum_pads</text>
+    <text id="view" class="text--mono">view</text>
+    <text id="sample" class="text--mono">sample</text>
+    <text id="audio_inputs" class="text--mono">audio_inputs</text>
+    <text id="audio_outputs" class="text--mono">audio_outputs</text>
+    <text id="midi_inputs" class="text--mono">midi_inputs</text>
+    <text id="midi_outputs" class="text--mono">midi_outputs</text>
+    <text id="selected_chain" class="text--mono">selected_chain</text>
+    <text id="parameters" class="text--mono">parameters</text>
+    <text id="groove" class="text--mono">groove</text>
+    <text id="clip" class="text--mono">clip</text>
+    <text id="selected_device" class="text--mono">selected_device</text>
+    <text id="mixer_device" class="text--mono">mixer_device</text>
+    <text id="devices" class="text--mono">devices</text>
+    <text id="group_track" class="text--mono">group_track</text>
+    <text id="arrangment_clips" class="text--mono">arrangment_clips</text>
+    <text id="clip_slots" class="text--mono">clip_slots</text>
+    <text id="grooves" class="text--mono">grooves</text>
+    <text id="groove_pool" class="text--mono">groove_pool</text>
+    <text id="cue_points" class="text--mono">cue_points</text>
+    <text id="selected_parameter" class="text--mono">selected_parameter</text>
+    <text id="selected_chain" class="text--mono">selected_chain</text>
+    <text id="detail_clip" class="text--mono">detail_clip</text>
+    <text id="highlighted_clip_slot" class="text--mono">highlighted_clip_slot</text>
+    <text id="selected_scene" class="text--mono">selected_scene</text>
+    <text id="selected_track" class="text--mono">selected_track</text>
+    <text id="master_track" class="text--mono">master_track</text>
+    <text id="return_tracks" class="text--mono">return_tracks</text>
+    <text id="tracks" class="text--mono">tracks</text>
+    <text id="visible_tracks" class="text--mono">visible_tracks</text>
+    <text id="appointed_device" class="text--mono">appointed_device</text>
+    <text id="scenes" class="text--mono">scenes</text>
+    <text id="live_set" class="text--mono">live_set</text>
+    <text id="control_surfaces" class="text--mono">control_surfaces</text>
+    <text id="live_app" class="text--mono">live_app</text>
+    <text id="control_surfaces" class="text--mono">control_surfaces</text>
+    <text id="list" class="text--mono">list</text>
+    <text id="single" class="text--mono">single</text>
+    <mask id="mask">
+      <!-- Pixels under white regions will be visible -->
+      <rect x="0" y="0" width="16000" height="9000" fill="white"/>
+      <!-- Pixels under black regions will be invisible -->
+      <rect id="icon--cue_volume--mask" width="83.333" height="83.333" x="9333.33" y="8125" fill="black"/>
+      <rect id="icon--song_tempo--mask" width="83.333" height="83.333" x="8416.67" y="8125" fill="black"/>
+      <rect id="icon--crossfader--mask" width="83.333" height="83.333" x="7500" y="8125" fill="black"/>
+      <rect id="icon--sends--mask" width="83.333" height="83.333" x="6750" y="7875" fill="black"/>
+      <rect id="icon--volume--mask" width="83.333" height="83.333" x="6125" y="7875" fill="black"/>
+      <rect id="icon--panning--mask" width="83.333" height="83.333" x="5416.67" y="7875" fill="black"/>
+      <rect id="chains-DrumPad--mask" width="458.333" height="166.667" x="11145.8" y="6958.33" fill="black"/>
+      <rect id="icon-selected_drum_pad--mask" width="83.333" height="83.333" x="8083.33" y="6750" fill="black"/>
+      <rect id="selected_drum_pad--mask" width="1125" height="166.667" x="7562.5" y="6958.33" fill="black"/>
+      <rect id="icon--drum_pads--mask" width="85.023" height="83.333" x="10541.7" y="6750" fill="black"/>
+      <rect id="icon--visible_drum_pads--mask" width="83.333" height="83.333" x="9208.33" y="6750" fill="black"/>
+      <rect id="visible_drum_pads--mask" width="1125" height="194.376" x="8687.5" y="6944.48" fill="black"/>
+      <rect id="selected_chain--mask" width="956.87" height="166.667" x="9457.52" y="6208.33" fill="black"/>
+      <rect id="DeviceView--mask-1" width="125" height="250" x="8062.5" y="6166.67" fill="black"/>
+      <rect id="DeviceView--mask-2" width="125" height="250" x="7416.67" y="6166.67" fill="black"/>
+      <rect id="DeviceView--mask-3" width="125" height="250" x="6312.5" y="6166.67" fill="black"/>
+      <rect id="groove--mask" width="458.333" height="180.268" x="6104.17" y="3958.33" fill="black"/>
+      <rect id="selected_device--mask" width="958.333" height="196.418" x="9854.17" y="4529.32" fill="black"/>
+      <rect id="group_track--mask" width="708.333" height="166.667" x="11270.8" y="2916.67" fill="black"/>
+      <rect id="clip_slots--mask" width="625" height="166.667" x="6062.5" y="2875" fill="black"/>
+      <rect id="selected_parameter--mask" width="1161.55" height="166.667" x="13787.8" y="8708.33" fill="black"/>
+      <rect id="selected_chain--mask" width="959.714" height="166.667" x="13955.8" y="6208.33" fill="black"/>
+      <rect id="detail_clip--mask" width="759.68" height="166.667" x="14125" y="3958.33" fill="black"/>
+      <rect id="highlighted_clip_slot--mask" width="1362.63" height="166.667" x="13616.5" y="3375" fill="black"/>
+      <rect id="selected_scene--mask" width="933.916" height="166.667" x="13979.2" y="2625" fill="black"/>
+      <rect id="selected_track--mask" width="933.916" height="166.667" x="13979.2" y="2458.33" fill="black"/>
+      <rect id="visible_tracks--mask" width="958.333" height="166.667" x="7562.5" y="1875" fill="black"/>
+      <rect id="appointed_device--mask" width="1041.67" height="166.667" x="3937.5" y="4583.33" fill="black"/>
+      <rect id="control_surfaces--mask" width="1041.67" height="166.667" x="1354.17" y="2583.33" fill="black"/>
+      <rect id="legend_title--mask" width="583.333" height="166.667" x="708.333" y="125" fill="black"/>
+    </mask>
+    <style>
+      :root {
+        --background-dk:#222;
+        --background-lt:white;
+        --text-dk:#222;
+        --text-lt:white;
+        --box-dk:#222;
+        --box-lt:#d15afc;
+        --icon-dk:#222;
+        --icon-lt:#d15afc;
+        --path-dk:#222;
+        --path-lt:yellow;
+      }
+
+      svg {
+        fill-rule:evenodd;
+        clip-rule:evenodd;
+        stroke-width:8.33px;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:1;
+
+        color-scheme:light dark;
+        background-color: var(--background-lt);
+      }
+
+      text {
+        fill:var(--text-dk);
+        stroke:none;
+        font-size: 100px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      }
+      .text--mono {
+        font-family:"Courier New", monospace;
+        font-weight: 600;
+      }
+      .text--heading {
+        text-decoration: underline;
+      }
+
+      .box--class,
+      .box--path,
+      .box--title {
+        fill:none;
+        stroke:var(--box-dk);
+      }
+      .box--title {
+        stroke-width:16.67px;
+      }
+
+      .path--canonical,
+      .path--reference {
+        fill:none;
+        stroke:var(--path-dk);
+      }
+
+      .icon--drum_racks,
+      .icon--master_track {
+        fill:var(--icon-dk);
+        stroke:none;
+      }
+      .icon--aidr {
+        fill:none;
+        stroke:var(--icon-dk);
+      }
+
+      .apply-mask {
+        mask: url(#mask);
+      }
+
+      @media (prefers-color-scheme:dark) {
+        svg {
+          background-color: var(--background-dk);
+        }
+
+        text {
+          fill:var(--text-lt);
+        }
+
+        .box--class,
+        .box--path,
+        .box--title {
+          stroke:var(--box-lt);
+        }
+
+        .path--canonical,
+        .path--reference {
+          stroke:var(--path-lt);
+        }
+
+        .icon--drum_racks,
+        .icon--master_track {
+          fill:var(--icon-lt);
+        }
+        .icon--aidr {
+          stroke:var(--icon-lt);
+        }
+      }
+    </style>
+  </defs>
+  <g serif:id="DeviceParameter" id="DeviceParameter">
+    <path class="box--class" d="M13625 8750c0-23-18.7-41.67-41.7-41.67H666.667C643.67 8708.33 625 8727 625 8750v83.33c0 23 18.67 41.67 41.667 41.67H13583.3c23 0 41.7-18.67 41.7-41.67V8750Z"/>
+    <use href="#DeviceParameter" x="6738.74" y="8827.48"/>
+  </g>
+  <g serif:id="track_activator (MixerDevice)" id="track_activator--MixerDevice">
+    <g class="path--canonical" id="Path">
+      <path d="M13083.3 8041.67v250"/>
+      <path d="m13120.8 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M13083.3 8458.33v244.11"/>
+    </g>
+    <path class="box--path" d="M13625 8375c0-45.99-37.3-83.33-83.3-83.33H12625c-46 0-83.3 37.34-83.3 83.33 0 45.99 37.3 83.33 83.3 83.33h916.7c46 0 83.3-37.34 83.3-83.33Z"/>
+    <use href="#track_activator" x="12633.3" y="8405.64"/>
+  </g>
+  <g serif:id="left_split_stereo (MixerDevice)" id="left_split_stereo--MixerDevice">
+    <g class="path--canonical" serif:id="Path" id="Path1">
+      <path d="M11833.3 8041.67v250"/>
+      <path d="m11870.8 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M11833.3 8458.33v244.11"/>
+    </g>
+    <path class="box--path" d="M12458.3 8375c0-45.99-37.3-83.33-83.3-83.33h-1083.3c-46 0-83.4 37.34-83.4 83.33 0 45.99 37.4 83.33 83.4 83.33H12375c46 0 83.3-37.34 83.3-83.33Z"/>
+    <use href="#left_split_stereo" x="11323.2" y="8405.64"/>
+  </g>
+  <g serif:id="right_split_stereo (MixerDevice)" id="right_split_stereo--MixerDevice">
+    <g class="path--canonical" serif:id="Path" id="Path2">
+      <path d="M10500 8041.67v250"/>
+      <path d="m10537.5 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M10500 8458.33v244.11"/>
+    </g>
+    <path class="box--path" d="M11125 8375c0-45.99-37.3-83.33-83.3-83.33H9958.33c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33h1083.37c46 0 83.3-37.34 83.3-83.33Z"/>
+    <use href="#right_split_stereo" x="9959.91" y="8405.64"/>
+  </g>
+  <g serif:id="cue_volume (MixerDevice)" id="cue_volume--MixerDevice">
+    <g class="path--canonical apply-mask" serif:id="Path" id="Path3">
+      <path d="M9375 8041.67v250"/>
+      <path d="m9412.5 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M9375 8458.33v244.11"/>
+    </g>
+    <g class="icon--master_track" id="icon--cue_volume">
+      <path serif:id="Icon (Master Track)" id="Icon--Master-Track" d="M9420.83 8125c0-2.3-1.86-4.17-4.16-4.17h-83.34c-2.3 0-4.16 1.87-4.16 4.17v83.33c0 2.31 1.86 4.17 4.16 4.17h83.34c2.3 0 4.16-1.86 4.16-4.17V8125Zm-83.33 79.17h35.96l-9.71-26.25-26.25-9.71v35.96Zm48.75-26.25-9.71 26.25h35.96v-35.96l-26.25 9.71Zm0-22.51 26.25 9.71v-35.95h-35.96l9.71 26.24Zm-48.75 9.71 26.25-9.71 9.71-26.24h-35.96v35.95Z"/>
+    </g>
+    <path class="box--path" d="M9791.67 8375c0-45.99-37.34-83.33-83.34-83.33h-666.66c-46 0-83.34 37.34-83.34 83.33 0 45.99 37.34 83.33 83.34 83.33h666.66c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#cue_volume" x="9074.95" y="8405.64"/>
+  </g>
+  <g serif:id="song_tempo (MixerDevice)" id="song_tempo--MixerDevice">
+    <g class="path--canonical apply-mask" serif:id="Path" id="Path4">
+      <path d="M8458.33 8041.67v250"/>
+      <path d="m8495.83 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M8458.33 8458.33v244.11"/>
+    </g>
+    <g class="icon--master_track" id="icon--song_tempo">
+      <path serif:id="Icon (Master Track)" id="Icon--Master-Track-1" d="M8504.17 8125c0-2.3-1.87-4.17-4.17-4.17h-83.33c-2.31 0-4.17 1.87-4.17 4.17v83.33c0 2.31 1.86 4.17 4.17 4.17H8500c2.3 0 4.17-1.86 4.17-4.17V8125Zm-83.34 79.17h35.96l-9.71-26.25-26.25-9.71v35.96Zm48.76-26.25-9.71 26.25h35.95v-35.96l-26.24 9.71Zm0-22.51 26.24 9.71v-35.95h-35.95l9.71 26.24Zm-48.76 9.71 26.25-9.71 9.71-26.24h-35.96v35.95Z"/>
+    </g>
+    <path class="box--path" d="M8875 8375c0-45.99-37.34-83.33-83.33-83.33H8125c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33h666.67c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#song_tempo" x="8158.28" y="8405.64"/>
+  </g>
+  <g serif:id="crossfader (MixerDevice)" id="crossfader--MixerDevice">
+    <g class="path--canonical apply-mask" serif:id="Path" id="Path5">
+      <path d="M7541.67 8041.67v250"/>
+      <path d="m7579.17 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M7541.67 8458.33v244.11"/>
+    </g>
+    <g class="icon--master_track" id="icon--crossfader">
+      <path serif:id="Icon (Master Track)" id="Icon--Master-Track-2" d="M7587.5 8125c0-2.3-1.86-4.17-4.17-4.17H7500c-2.3 0-4.17 1.87-4.17 4.17v83.33c0 2.31 1.87 4.17 4.17 4.17h83.33c2.31 0 4.17-1.86 4.17-4.17V8125Zm-83.33 79.17h35.95l-9.71-26.25-26.24-9.71v35.96Zm48.75-26.25-9.71 26.25h35.96v-35.96l-26.25 9.71Zm0-22.51 26.25 9.71v-35.95h-35.96l9.71 26.24Zm-48.75 9.71 26.24-9.71 9.71-26.24h-35.95v35.95Z"/>
+    </g>
+    <path class="box--path" d="M7958.33 8375c0-45.99-37.34-83.33-83.33-83.33h-666.67c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33H7875c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#crossfader" x="7241.62" y="8405.64"/>
+  </g>
+  <g serif:id="sends (MixerDevice, ChainMixerDevice)" id="sends--MixerDevice--ChainMixerDevice">
+    <g class="path--canonical apply-mask" serif:id="Path" id="Path6">
+      <path d="M6791.67 7791.67v500"/>
+      <path d="M6791.67 8458.33v250"/>
+      <path d="m6750 8708.33 41.67-83.33 41.66 83.33"/>
+    </g>
+    <g id="icon--sends">
+      <circle class="icon--aidr" serif:id="Icon (AIDR)" id="Icon--AIDR" cx="6791.67" cy="7916.67" r="41.667"/>
+    </g>
+    <path class="box--path" d="M7041.67 8375c0-45.99-37.34-83.33-83.34-83.33H6625c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33h333.33c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#sends" x="6641.64" y="8405.64"/>
+  </g>
+  <g serif:id="volume (MixerDevice, ChainMixerDevice)" id="volume--MixerDevice--ChainMixerDevice">
+    <g class="path--canonical apply-mask" serif:id="Path" id="Path7">
+      <path d="M6166.67 7791.67v500"/>
+      <path d="m6204.17 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M6166.67 8458.33v244.11"/>
+    </g>
+    <g id="icon--volume">
+      <circle class="icon--aidr" serif:id="Icon (AIDR)" id="Icon--AIDR-1" cx="6166.67" cy="7916.67" r="41.667"/>
+    </g>
+    <path class="box--path" d="M6458.33 8375c0-45.99-37.34-83.33-83.33-83.33h-416.67c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33H6375c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#volume" x="5980.1" y="8405.64"/>
+  </g>
+  <g serif:id="panning (MixerDevice, ChainMixerDevice)" id="panning--MixerDevice--ChainMixerDevice">
+    <g class="path--canonical apply-mask" serif:id="Path" id="Path8">
+      <path d="M5458.33 7791.67v500"/>
+      <path d="m5495.83 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M5458.33 8458.33v244.11"/>
+      <path d="M13416.7 7541.67v500H5458.33"/>
+    </g>
+    <g id="icon--panning">
+      <circle class="icon--aidr" serif:id="Icon (AIDR)" id="Icon--AIDR-2" cx="5458.33" cy="7916.67" r="41.667"/>
+    </g>
+    <path class="box--path" d="M5791.67 8375c0-45.99-37.34-83.33-83.34-83.33h-500c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33h500c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#panning" x="5248.3" y="8405.64"/>
+  </g>
+  <g id="MixerDevice">
+    <path class="box--class" d="M13875 7416.67c0-23-18.7-41.67-41.7-41.67H13000c-23 0-41.7 18.67-41.7 41.67V7500c0 23 18.7 41.67 41.7 41.67h833.3c23 0 41.7-18.67 41.7-41.67v-83.33Z"/>
+    <use href="#MixerDevice" x="13141.6" y="7494.15"/>
+  </g>
+  <g serif:id="chain_activator (ChainMixerDevice)" id="chain_activator--ChainMixerDevice">
+    <g class="path--canonical" serif:id="Path" id="Path10">
+      <path d="M12291.7 7541.67v250H4500v500"/>
+      <path d="m4537.5 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M4500 8458.33v244.11"/>
+    </g>
+    <path class="box--path" d="M5041.67 8375c0-45.99-37.34-83.33-83.34-83.33h-916.66c-46 0-83.34 37.34-83.34 83.33 0 45.99 37.34 83.33 83.34 83.33h916.66c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#chain_activator" x="4049.93" y="8405.64"/>
+  </g>
+  <g id="ChainMixerDevice">
+    <path class="box--class" d="M12875 7416.67c0-23-18.7-41.67-41.7-41.67H11750c-23 0-41.7 18.67-41.7 41.67V7500c0 23 18.7 41.67 41.7 41.67h1083.3c23 0 41.7-18.67 41.7-41.67v-83.33Z"/>
+    <use href="#ChainMixerDevice" x="11886" y="7494.15"/>
+  </g>
+  <g serif:id="chains (DrumPad)" id="chains--DrumPad">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path11">
+      <path d="M11375 7375v-708.33" style="stroke-dasharray:8.33,25,0,0;"/>
+      <path d="m11333.3 6583.33 41.7 83.34 41.7-83.34"/>
+      <path d="M11375 6666.67v-83.34"/>
+    </g>
+    <use href="#chains" x="11195" y="7072.31" fill="white" stroke="white" stroke-width="10px"/>
+  </g>
+  <g id="DrumPad">
+    <path class="box--class" d="M11541.7 7416.67c0-23-18.7-41.67-41.7-41.67H7625c-23 0-41.67 18.67-41.67 41.67V7500c0 23 18.67 41.67 41.67 41.67h3875c23 0 41.7-18.67 41.7-41.67v-83.33Z"/>
+    <use href="#DrumPad" x="9351.32" y="7494.15"/>
+  </g>
+  <g id="DrumChain">
+    <path class="box--class" d="M11958.3 6458.33c0-22.99-18.6-41.66-41.6-41.66h-1083.4c-23 0-41.6 18.67-41.6 41.66v83.34c0 22.99 18.6 41.66 41.6 41.66h1083.4c23 0 41.6-18.67 41.6-41.66v-83.34Z"/>
+    <use href="#DrumChain" x="11122.1" y="6535.82"/>
+  </g>
+  <g serif:id="mixer_device (Chain)" id="mixer_device--Chain">
+    <g class="path--canonical" serif:id="Path" id="Path12">
+      <path class="path--canonical" d="M12291.7 6375v583.33"/>
+      <path d="m12329.2 7331.61-37.5 37.5-37.5-37.5"/>
+      <path d="M12291.7 7125v244.11"/>
+    </g>
+    <path class="box--path" d="M12791.7 7041.67c0-46-37.4-83.34-83.4-83.34H11875c-46 0-83.3 37.34-83.3 83.34 0 45.99 37.3 83.33 83.3 83.33h833.3c46 0 83.4-37.34 83.4-83.33Z"/>
+    <use href="#mixer_device" x="11931.6" y="7072.31"/>
+  </g>
+  <g serif:id="devices (Chain)" id="devices--Chain">
+    <path class="box--path" d="M13208.3 5729.17c0-57.49-46.6-104.17-104.1-104.17h-458.4c-57.5 0-104.1 46.68-104.1 104.17s46.6 104.16 104.1 104.16h458.4c57.5 0 104.1-46.67 104.1-104.16Z"/>
+    <use href="#devices" x="12665" y="5759.81"/>
+    <g class="path--canonical" serif:id="Path" id="Path13">
+      <path d="M12875 5041.67V5625"/>
+      <path d="M12875 5833.33v375"/>
+      <path d="m12833.3 5041.67 41.7 83.33 41.7-83.33"/>
+    </g>
+  </g>
+  <g id="Chain">
+    <path class="box--class" d="M13041.7 6250c0-23-18.7-41.67-41.7-41.67h-2166.7c-23 0-41.6 18.67-41.6 41.67v83.33c0 23 18.6 41.67 41.6 41.67H13000c23 0 41.7-18.67 41.7-41.67V6250Z"/>
+    <use href="#Chain" x="11786" y="6327.48"/>
+  </g>
+  <g serif:id="selected_drum_pad (RackDeviceView)" id="selected_drum_pad--RackDeviceView">
+    <g class="path--canonical apply-mask" serif:id="Path" id="Path14">
+      <path d="m8162.5 7331.61-37.5 37.5-37.5-37.5"/>
+      <path d="M8125 6583.33v785.78"/>
+    </g>
+    <path class="icon--drum_racks" serif:id="Icon (Drum Racks)" id="Icon--Drum-Racks" d="M8170.83 6750c0-2.3-1.86-4.17-4.16-4.17h-83.34c-2.3 0-4.16 1.87-4.16 4.17v83.33c0 2.31 1.86 4.17 4.16 4.17h83.34c2.3 0 4.16-1.86 4.16-4.17V6750Zm-50 79.17v-33.34h-33.33v33.34h33.33Zm41.67-33.34h-33.33v33.34h33.33v-33.34Zm-75-8.33h33.33v-33.33h-33.33v33.33Zm41.67-33.33v33.33h33.33v-33.33h-33.33Z"/>
+    <use href="#selected_drum_pad" x="7614.92" y="7072.31"/>
+  </g>
+  <g id="RackDeviceView">
+    <path class="box--class" d="M8666.67 6458.33c0-22.99-18.67-41.66-41.67-41.66H7625c-23 0-41.67 18.67-41.67 41.66v83.34c0 22.99 18.67 41.66 41.67 41.66h1000c23 0 41.67-18.67 41.67-41.66v-83.34Z"/>
+    <use href="#RackDeviceView" x="7750.78" y="6535.82"/>
+  </g>
+  <g serif:id="return_chains (RackDevice)" id="return_chains--RackDevice">
+    <g class="path--canonical" serif:id="Path" id="Path15">
+      <path d="M11958.3 5802.49v405.84"/>
+      <path d="M11958.3 5250v375"/>
+      <path d="m11916.7 6208.33 41.6-83.33 41.7 83.33"/>
+    </g>
+    <path class="box--path" d="M12458.3 5714.16c0-49.21-39.9-89.16-89.1-89.16h-821.7c-49.2 0-89.2 39.95-89.2 89.16 0 49.2 40 89.15 89.2 89.15h821.7c49.2 0 89.1-39.95 89.1-89.15Z"/>
+    <use href="#return_chains" x="11568.3" y="5738.97"/>
+  </g>
+  <g serif:id="chains (RackDevice)" id="chains--RackDevice">
+    <g class="path--canonical" serif:id="Path" id="Path16">
+      <path d="M11083.3 5250v375"/>
+      <path d="M11083.3 5791.67v416.66"/>
+      <path d="m11041.7 6208.33 41.6-83.33 41.7 83.33"/>
+    </g>
+    <path class="box--path" d="M11375 5708.33c0-45.99-37.3-83.33-83.3-83.33H10875c-46 0-83.3 37.34-83.3 83.33 0 46 37.3 83.34 83.3 83.34h416.7c46 0 83.3-37.34 83.3-83.34Z"/>
+    <use href="#chains" x="10903.3" y="5738.97"/>
+  </g>
+  <g serif:id="drum_pads (RackDevice)" id="drum_pads--RackDevice">
+    <g class="path--canonical apply-mask" serif:id="Path" id="Path17">
+      <path d="M10583.3 5250v1708.33"/>
+      <path d="M10583.3 7125v250"/>
+      <path d="m10541.7 7375 41.6-83.33 41.7 83.33"/>
+    </g>
+    <path class="icon--drum_racks" serif:id="Icon (Drum Racks)" id="Icon--Drum-Racks-1" d="M10629.2 6750c0-2.3-1.9-4.17-4.2-4.17h-83.3c-2.3 0-4.2 1.87-4.2 4.17v83.33c0 2.31 1.9 4.17 4.2 4.17h83.3c2.3 0 4.2-1.86 4.2-4.17V6750Zm-50 79.17v-33.34h-33.4v33.34h33.4Zm41.6-33.34h-33.3v33.34h33.3v-33.34Zm-75-8.33h33.4v-33.33h-33.4v33.33Zm41.7-33.33v33.33h33.3v-33.33h-33.3Z"/>
+    <path class="box--path" d="M10916.7 7041.67c0-46-37.4-83.34-83.4-83.34h-500c-46 0-83.3 37.34-83.3 83.34 0 45.99 37.3 83.33 83.3 83.33h500c46 0 83.4-37.34 83.4-83.33Z"/>
+    <use href="#drum_pads" x="10313.3" y="7072.31"/>
+  </g>
+  <g serif:id="visible_drum_pads (RackDevice)" id="visible_drum_pads--RackDevice">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path18">
+      <path d="M9250 5250v2041.67" style="stroke-dasharray:8.33,25,0,0;"/>
+      <path d="m9208.33 7375 41.67-83.33 41.67 83.33"/>
+      <path d="M9250 7375v-83.33"/>
+    </g>
+    <path class="icon--drum_racks" serif:id="Icon (Drum Racks)" id="Icon--Drum-Racks-2" d="M9295.83 6750c0-2.3-1.86-4.17-4.16-4.17h-83.34c-2.3 0-4.16 1.87-4.16 4.17v83.33c0 2.31 1.86 4.17 4.16 4.17h83.34c2.3 0 4.16-1.86 4.16-4.17V6750Zm-50 79.17v-33.34h-33.33v33.34h33.33Zm41.67-33.34h-33.33v33.34h33.33v-33.34Zm-75-8.33h33.33v-33.33h-33.33v33.33Zm41.67-33.33v33.33h33.33v-33.33h-33.33Z"/>
+    <use href="#visible_drum_pads" x="8739.92" y="7072.31"/>
+  </g>
+  <g serif:id="view (RackDevice)" id="view--RackDevice">
+    <g class="path--canonical" serif:id="Path" id="Path19">
+      <path d="m8162.5 6373.27-37.5 37.5-37.5-37.5"/>
+      <path d="M8125 5466.05v944.72"/>
+      <path d="M8125 5250v43.21"/>
+    </g>
+    <path class="box--path" d="M8333.33 5375c0-45.99-37.34-83.33-83.33-83.33h-250c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33h250c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#view" x="8004.98" y="5405.64"/>
+  </g>
+  <g id="RackDevice">
+    <path class="box--class" d="M12708.3 5125c0-23-18.6-41.67-41.6-41.67H7916.67c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h4750.03c23 0 41.6-18.67 41.6-41.67V5125Z"/>
+    <use href="#RackDevice" x="10024.9" y="5202.48"/>
+  </g>
+  <g id="Eq8DeviceView">
+    <path class="box--class" d="M7541.67 6458.33c0-22.99-18.67-41.66-41.67-41.66h-875c-23 0-41.67 18.67-41.67 41.66v83.34c0 22.99 18.67 41.66 41.67 41.66h875c23 0 41.67-18.67 41.67-41.66v-83.34Z"/>
+    <use href="#Eq8DeviceView" x="6713.23" y="6535.82"/>
+  </g>
+  <g serif:id="view (Eq8Device)" id="view--Eq8Device">
+    <g class="path--canonical" serif:id="Path" id="Path20">
+      <path d="M7479.17 5250v43.21"/>
+      <path d="m7516.67 6373.27-37.5 37.5-37.5-37.5"/>
+      <path d="M7479.17 5466.05v944.72"/>
+    </g>
+    <path class="box--path" d="M7687.5 5375c0-45.99-37.34-83.33-83.33-83.33h-250c-46 0-83.34 37.34-83.34 83.33 0 45.99 37.34 83.33 83.34 83.33h250c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#view" x="7359.15" y="5405.64"/>
+  </g>
+  <g id="Eq8Device">
+    <path class="box--class" d="M7812.5 5125c0-23-18.67-41.67-41.67-41.67H7187.5c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h583.33c23 0 41.67-18.67 41.67-41.67V5125Z"/>
+    <use href="#Eq8Device" x="7237.37" y="5202.48"/>
+  </g>
+  <g id="Sample">
+    <path class="box--class" d="M6041.67 5666.67c0-23-18.67-41.67-41.67-41.67h-500c-23 0-41.67 18.67-41.67 41.67V5750c0 23 18.67 41.67 41.67 41.67h500c23 0 41.67-18.67 41.67-41.67v-83.33Z"/>
+    <use href="#Sample" x="5580.47" y="5744.15"/>
+  </g>
+  <g id="SimplerDeviceView">
+    <path class="box--class" d="M6541.67 6458.33c0-22.99-18.67-41.66-41.67-41.66H5500c-23 0-41.67 18.67-41.67 41.66v83.34c0 22.99 18.67 41.66 41.67 41.66h1000c23 0 41.67-18.67 41.67-41.66v-83.34Z"/>
+    <use href="#SimplerDeviceView" x="5570.22" y="6535.82"/>
+  </g>
+  <g serif:id="sample (SimplerDevice)" id="sample--SimplerDevice">
+    <g class="path--canonical" serif:id="Path" id="Path21">
+      <path d="M5750 5250v41.67"/>
+      <path d="m5787.5 5581.61-37.5 37.5-37.5-37.5"/>
+      <path d="M5750 5458.33v160.78"/>
+    </g>
+    <path class="box--path" d="M6041.67 5375c0-45.99-37.34-83.33-83.34-83.33h-416.66c-46 0-83.34 37.34-83.34 83.33 0 45.99 37.34 83.33 83.34 83.33h416.66c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#sample" x="5569.97" y="5405.64"/>
+  </g>
+  <g serif:id="view (SimplerDevice)" id="view--SimplerDevice">
+    <g class="path--canonical" serif:id="Path" id="Path22">
+      <path d="M6375 5250v43.21"/>
+      <path d="m6412.5 6373.27-37.5 37.5-37.5-37.5"/>
+      <path d="M6375 5466.05v944.72"/>
+    </g>
+    <path class="box--path" d="M6583.33 5375c0-45.99-37.34-83.33-83.33-83.33h-250c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33h250c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#view" x="6254.98" y="5405.64"/>
+  </g>
+  <g id="SimplerDevice">
+    <path class="box--class" d="M6583.33 5125c0-23-18.67-41.67-41.66-41.67H5500c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h1041.67c22.99 0 41.66-18.67 41.66-41.67V5125Z"/>
+    <use href="#SimplerDevice" x="5698.52" y="5202.48"/>
+  </g>
+  <g id="DeviceIO">
+    <path class="box--class" d="M6500 7416.67c0-23-18.67-41.67-41.67-41.67h-4000c-22.99 0-41.66 18.67-41.66 41.67V7500c0 23 18.67 41.67 41.66 41.67h4000c23 0 41.67-18.67 41.67-41.67v-83.33Z"/>
+    <use href="#DeviceIO" x="4252.72" y="7494.15"/>
+  </g>
+  <g serif:id="audio_inputs (MaxDevice" id="audio_inputs--MaxDevice">
+    <g class="path--canonical" serif:id="Path" id="Path23">
+      <path d="M2875 7125v250"/>
+      <path d="M2875 6875v83.33"/>
+      <path d="M2875 6875h1562.5V5250"/>
+      <path d="m2833.33 7375 41.67-83.33 41.67 83.33"/>
+    </g>
+    <path class="box--path" d="M3333.33 7041.67c0-46-37.34-83.34-83.33-83.34h-750c-45.99 0-83.33 37.34-83.33 83.34 0 45.99 37.34 83.33 83.33 83.33h750c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#audio_inputs" x="2514.94" y="7072.31"/>
+  </g>
+  <g serif:id="audio_outputs (MaxDevice)" id="audio_outputs--MaxDevice">
+    <g class="path--canonical" serif:id="Path" id="Path24">
+      <path d="M3916.67 7125v250"/>
+      <path d="M3916.67 6875v83.33"/>
+      <path d="m3875 7375 41.67-83.33 41.66 83.33"/>
+    </g>
+    <path class="box--path" d="M4375 7041.67c0-46-37.34-83.34-83.33-83.34h-750c-46 0-83.34 37.34-83.34 83.34 0 45.99 37.34 83.33 83.34 83.33h750c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#audio_outputs" x="3526.6" y="7072.31"/>
+  </g>
+  <g serif:id="midi_inputs (MaxDevice)" id="midi_inputs--MaxDevice">
+    <path class="box--path" d="M5416.67 7041.67c0-46-37.34-83.34-83.34-83.34h-750c-45.99 0-83.33 37.34-83.33 83.34 0 45.99 37.34 83.33 83.33 83.33h750c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#midi_inputs" x="4628.28" y="7072.31"/>
+    <g class="path--canonical" serif:id="Path" id="Path25">
+      <path d="M4958.33 6875v83.33"/>
+      <path d="m4916.67 7375 41.66-83.33L5000 7375"/>
+      <path d="M4958.33 7125v250"/>
+    </g>
+  </g>
+  <g serif:id="midi_outputs (MaxDevice)" id="midi_outputs--MaxDevice">
+    <g class="path--canonical" serif:id="Path" id="Path26">
+      <path d="M6000 6875v83.33"/>
+      <path d="M6000 6875H4437.5"/>
+      <path d="m5958.33 7375 41.67-83.33 41.67 83.33"/>
+      <path d="M6000 7125v250"/>
+    </g>
+    <path class="box--path" d="M6500 7041.67c0-46-37.34-83.34-83.33-83.34h-833.34c-45.99 0-83.33 37.34-83.33 83.34 0 45.99 37.34 83.33 83.33 83.33h833.34c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#midi_outputs" x="5639.94" y="7072.31"/>
+  </g>
+  <g id="MaxDevice">
+    <path class="box--class" d="M4791.67 5125c0-23-18.67-41.67-41.67-41.67h-625c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h625c23 0 41.67-18.67 41.67-41.67V5125Z"/>
+    <use href="#MaxDevice" x="4190.21" y="5202.48"/>
+  </g>
+  <g id="PluginDevice">
+    <path class="box--class" d="M2083.33 5958.33c0-22.99-18.67-41.66-41.66-41.66H666.667c-22.997 0-41.667 18.67-41.667 41.66v83.34c0 22.99 18.67 41.66 41.667 41.66H2041.67c22.99 0 41.66-18.67 41.66-41.66v-83.34Z"/>
+    <use href="#PluginDevice" x="1062.35" y="6035.82"/>
+  </g>
+  <g id="HybridReverbDevice">
+    <path class="box--class" d="M2083.33 5750c0-23-18.67-41.67-41.66-41.67H666.667C643.67 5708.33 625 5727 625 5750v83.33c0 23 18.67 41.67 41.667 41.67H2041.67c22.99 0 41.66-18.67 41.66-41.67V5750Z"/>
+    <use href="#HybridReverbDevice" x="895.671" y="5827.48"/>
+  </g>
+  <g id="CompressorDevice">
+    <path class="box--class" d="M2083.33 5541.67c0-23-18.67-41.67-41.66-41.67H666.667c-22.997 0-41.667 18.67-41.667 41.67V5625c0 23 18.67 41.67 41.667 41.67H2041.67c22.99 0 41.66-18.67 41.66-41.67v-83.33Z"/>
+    <use href="#CompressorDevice" x="929.045" y="5619.15"/>
+  </g>
+  <g id="SpectralResonatorDevice">
+    <path class="box--class" d="M2083.33 5333.33c0-22.99-18.67-41.66-41.66-41.66H666.667c-22.997 0-41.667 18.67-41.667 41.66v83.34c0 22.99 18.67 41.66 41.667 41.66H2041.67c22.99 0 41.66-18.67 41.66-41.66v-83.34Z"/>
+    <use href="#SpectralResonatorDevice" x="787.223" y="5410.82"/>
+  </g>
+  <g id="WavetableDevice">
+    <path class="box--class" d="M2083.33 5125c0-23-18.67-41.67-41.66-41.67H666.667C643.67 5083.33 625 5102 625 5125v83.33c0 23 18.67 41.67 41.667 41.67H2041.67c22.99 0 41.66-18.67 41.66-41.67V5125Z"/>
+    <use href="#WavetableDevice" x="966.96" y="5202.48"/>
+  </g>
+  <g serif:id="selected_chain (DeviceView)" id="selected_chain--DeviceView">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path27">
+      <path d="m10748.3 6254.17 37.5 37.5-37.5 37.5"/>
+      <path d="M8666.67 6291.67h2119.13" style="stroke-dasharray:8.33,25,0,0;"/>
+    </g>
+    <use href="#selected_chain" x="9517.43" y="6322.31"/>
+  </g>
+  <g id="DeviceView">
+    <path class="box--class apply-mask" d="M8666.67 6250c0-23-18.67-41.67-41.67-41.67H5500c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h3125c23 0 41.67-18.67 41.67-41.67V6250Z"/>
+    <use href="#DeviceView" x="6802.2" y="6327.48"/>
+  </g>
+  <g serif:id="view (Device)" id="view--Device">
+    <g class="path--canonical" serif:id="Path" id="Path28">
+      <path d="m6954.17 6164.94-37.5 37.5-37.5-37.5"/>
+      <path d="M6916.67 5458.33v744.11"/>
+      <path d="M6916.67 5041.67v250"/>
+    </g>
+    <path class="box--path" d="M7125 5375c0-45.99-37.34-83.33-83.33-83.33h-250c-46 0-83.34 37.34-83.34 83.33 0 45.99 37.34 83.33 83.34 83.33h250c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#view" x="6796.65" y="5405.64"/>
+  </g>
+  <g serif:id="parameters (Device)" id="parameters--Device">
+    <g class="path--canonical" serif:id="Path" id="Path29">
+      <path d="M2250 5041.67v3250"/>
+      <path d="m2287.5 8664.94-37.5 37.5-37.5-37.5"/>
+      <path d="M2250 8458.33v244.11"/>
+    </g>
+    <path class="box--path" d="M2666.67 8375c0-45.99-37.34-83.33-83.34-83.33h-666.66c-46 0-83.34 37.34-83.34 83.33 0 45.99 37.34 83.33 83.34 83.33h666.66c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#parameters" x="1949.95" y="8405.64"/>
+  </g>
+  <g id="Device">
+    <path class="box--class" d="M13208.3 4916.67c0-23-18.6-41.67-41.6-41.67H666.667c-22.997 0-41.667 18.67-41.667 41.67V5000c0 23 18.67 41.67 41.667 41.67H13166.7c23 0 41.6-18.67 41.6-41.67v-83.33Z"/>
+    <use href="#Device" x="6763.84" y="4994.15"/>
+  </g>
+  <g id="ClipView">
+    <path class="box--class" d="M8750 4583.33c0-22.99-18.67-41.66-41.67-41.66h-666.66c-23 0-41.67 18.67-41.67 41.66v83.34c0 22.99 18.67 41.66 41.67 41.66h666.66c23 0 41.67-18.67 41.67-41.66v-83.34Z"/>
+    <use href="#ClipView" x="8181.4" y="4660.82"/>
+  </g>
+  <g serif:id="view (Clip)" id="view--Clip">
+    <g class="path--canonical" serif:id="Path" id="Path30">
+      <path d="M8375 4125v83.33"/>
+      <path d="m8412.5 4498.27-37.5 37.5-37.5-37.5"/>
+      <path d="M8375 4375v160.77"/>
+    </g>
+    <path class="box--path" d="M8583.33 4291.67c0-46-37.34-83.34-83.33-83.34h-250c-45.99 0-83.33 37.34-83.33 83.34 0 45.99 37.34 83.33 83.33 83.33h250c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#view" x="8254.98" y="4322.31"/>
+  </g>
+  <g serif:id="groove (Clip)" id="groove--Clip">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path31">
+      <path d="m6370.83 4498.27-37.5 37.5-37.5-37.5"/>
+      <path d="M6958.33 4041.67h-625v494.1" style="stroke-dasharray:8.33,25,0,0;"/>
+    </g>
+    <use href="#groove" x="6153.3" y="4072.31"/>
+  </g>
+  <g id="Clip">
+    <path class="box--class" d="M9791.67 4000c0-23-18.67-41.67-41.67-41.67H7000c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h2750c23 0 41.67-18.67 41.67-41.67V4000Z"/>
+    <use href="#Clip" x="8288.87" y="4086.39"/>
+  </g>
+  <g serif:id="clip (ClipSlot)" id="clip--ClipSlot">
+    <g class="path--canonical" serif:id="Path" id="Path32">
+      <path d="M7208.33 3541.67V3625"/>
+      <path d="m7245.83 3914.94-37.5 37.5-37.5-37.5"/>
+      <path d="M7208.33 3791.67v160.77"/>
+    </g>
+    <path class="box--path" d="M7458.33 3708.33c0-45.99-37.34-83.33-83.33-83.33h-333.33c-46 0-83.34 37.34-83.34 83.33 0 46 37.34 83.34 83.34 83.34H7375c45.99 0 83.33-37.34 83.33-83.34Z"/>
+    <use href="#clip" x="7088.31" y="3738.97"/>
+  </g>
+  <g id="ClipSlot">
+    <path class="box--class" d="M8458.33 3416.67c0-23-18.67-41.67-41.66-41.67H6000c-23 0-41.67 18.67-41.67 41.67V3500c0 23 18.67 41.67 41.67 41.67h2416.67c22.99 0 41.66-18.67 41.66-41.67v-83.33Z"/>
+    <use href="#ClipSlot" x="7036.04" y="3494.15"/>
+  </g>
+  <g serif:id="selected_track (TrackView)" id="selected_track--TrackView">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path33">
+      <path d="m10370.8 4831.61-37.5 37.5-37.5-37.5"/>
+      <path d="M10333.3 3375v1494.11" style="stroke-dasharray:8.33,25,0,0;"/>
+    </g>
+    <use href="#selected_device" x="9883.26" y="4655.64"/>
+  </g>
+  <g id="TrackView">
+    <path class="box--class" d="M10708.3 3250c0-23-18.6-41.67-41.6-41.67H10000c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h666.7c23 0 41.6-18.67 41.6-41.67V3250Z"/>
+    <use href="#TrackView" x="10102.7" y="3327.48"/>
+  </g>
+  <g serif:id="view (Track)" id="view--Track">
+    <g class="path--canonical" serif:id="Path" id="Path34">
+      <path d="M10333.3 2625v250"/>
+      <path d="m10370.8 3164.94-37.5 37.5-37.5-37.5"/>
+      <path d="M10333.3 3041.67v160.77"/>
+    </g>
+    <path class="box--path" d="M10541.7 2958.33c0-45.99-37.4-83.33-83.4-83.33h-250c-46 0-83.3 37.34-83.3 83.33 0 46 37.3 83.34 83.3 83.34h250c46 0 83.4-37.34 83.4-83.34Z"/>
+    <use href="#view" x="10213.3" y="2988.97"/>
+  </g>
+  <g serif:id="mixer_device (Track)" id="mixer_device--Track">
+    <g class="path--canonical" serif:id="Path" id="Path35">
+      <path d="M13416.7 2625v4333.33"/>
+      <path d="m13454.2 7331.61-37.5 37.5-37.5-37.5"/>
+      <path d="M13416.7 7125v244.11"/>
+    </g>
+    <path class="box--path" d="M13875 7041.67c0-46-37.3-83.34-83.3-83.34h-750c-46 0-83.4 37.34-83.4 83.34 0 45.99 37.4 83.33 83.4 83.33h750c46 0 83.3-37.34 83.3-83.33Z"/>
+    <use href="#mixer_device" x="13056.6" y="7072.31"/>
+  </g>
+  <g serif:id="devices (Track)" id="devices--Track">
+    <g class="path--canonical" serif:id="Path" id="Path36">
+      <path d="M12875 2625v1916.67"/>
+      <path d="M12875 4708.33V4875"/>
+      <path d="m12833.3 4875 41.7-83.33 41.7 83.33"/>
+    </g>
+    <path class="box--path" d="M13208.3 4625c0-45.99-37.3-83.33-83.3-83.33h-500c-46 0-83.3 37.34-83.3 83.33 0 45.99 37.3 83.33 83.3 83.33h500c46 0 83.3-37.34 83.3-83.33Z"/>
+    <use href="#devices" x="12665" y="4655.64"/>
+  </g>
+  <g serif:id="group_track (Track)" id="group_track--Track">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path37">
+      <path d="m11837.5 2668.39 37.5-37.5 37.5 37.5"/>
+      <path d="M11375 2625v666.67h500v-660.78" style="stroke-dasharray:8.33,25,0,0;stroke-dashoffset:4.17;"/>
+    </g>
+    <use href="#group_track" x="11294.9" y="3030.64"/>
+  </g>
+  <g serif:id="arrangement_clips (Track)" id="arrangement_clips--Track">
+    <g class="path--canonical" serif:id="Path" id="Path38">
+      <path d="M9166.67 2625v1000"/>
+      <path d="M9166.67 3791.67v166.66"/>
+      <path d="m9125 3958.33 41.67-83.33 41.66 83.33"/>
+    </g>
+    <path class="box--path" d="M9791.67 3708.33c0-45.99-37.34-83.33-83.34-83.33H8625c-45.99 0-83.33 37.34-83.33 83.33 0 46 37.34 83.34 83.33 83.34h1083.33c46 0 83.34-37.34 83.34-83.34Z"/>
+    <use href="#arrangment_clips" x="8690.19" y="3738.97"/>
+  </g>
+  <g serif:id="clip_slots (Track)" id="clip_slots--Track">
+    <g class="path--canonical" serif:id="Path" id="Path39">
+      <path d="m8000 3375 41.67-83.33 41.66 83.33"/>
+      <path d="M8041.67 2625v250"/>
+      <path d="M8041.67 3041.67V3375"/>
+    </g>
+    <path class="box--path" d="M8458.33 2958.33c0-45.99-37.34-83.33-83.33-83.33h-666.67c-45.99 0-83.33 37.34-83.33 83.33 0 46 37.34 83.34 83.33 83.34H8375c45.99 0 83.33-37.34 83.33-83.34Z"/>
+    <use href="#clip_slots" x="7741.62" y="2988.97"/>
+  </g>
+  <g id="Track">
+    <path class="box--class" d="M13625 2500c0-23-18.7-41.67-41.7-41.67H7083.33c-22.99 0-41.66 18.67-41.66 41.67v83.33c0 23 18.67 41.67 41.66 41.67h6499.97c23 0 41.7-18.67 41.7-41.67V2500Z"/>
+    <use href="#Track" x="10210.2" y="2577.48"/>
+  </g>
+  <g serif:id="clip_slots (Scene)" id="clip_slots--Scene">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path40">
+      <path d="M6375 2791.67v500" style="stroke-dasharray:8.33,25,0,0;"/>
+      <path d="m6333.33 3375 41.67-83.33 41.67 83.33"/>
+      <path d="M6375 3291.67V3375"/>
+    </g>
+    <use href="#clip_slots" x="6074.95" y="2988.97"/>
+  </g>
+  <g id="Scene">
+    <path class="box--class" d="M6708.33 2666.67c0-23-18.67-41.67-41.66-41.67h-583.34c-22.99 0-41.66 18.67-41.66 41.67V2750c0 23 18.67 41.67 41.66 41.67h583.34c22.99 0 41.66-18.67 41.66-41.67v-83.33Z"/>
+    <use href="#Scene" x="6233.23" y="2744.15"/>
+  </g>
+  <g serif:id="grooves (GroovePool)" id="grooves--GroovePool">
+    <g class="path--canonical" serif:id="Path" id="Path41">
+      <path d="M5375 2375v1583.33"/>
+      <path d="M5375 4125v416.67"/>
+      <path d="m5333.33 4541.67 41.67-83.34 41.67 83.34"/>
+    </g>
+    <path class="box--path" d="M5791.67 4041.67c0-46-37.34-83.34-83.34-83.34h-666.66c-46 0-83.34 37.34-83.34 83.34 0 45.99 37.34 83.33 83.34 83.33h666.66c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#grooves" x="5164.97" y="4072.31"/>
+  </g>
+  <g id="GroovePool">
+    <path class="box--class" d="M5791.67 2250c0-23-18.67-41.67-41.67-41.67h-750c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h750c23 0 41.67-18.67 41.67-41.67V2250Z"/>
+    <use href="#GroovePool" x="5110.96" y="2327.48"/>
+  </g>
+  <g serif:id="groove_pool (Song)" id="groove_pool--Song">
+    <g class="path--canonical" serif:id="Path" id="Path42">
+      <path d="M5375 1791.67V1875"/>
+      <path d="m5412.5 2164.94-37.5 37.5-37.5-37.5"/>
+      <path d="M5375 2041.67v160.77"/>
+    </g>
+    <path class="box--path" d="M5791.67 1958.33c0-45.99-37.34-83.33-83.34-83.33h-666.66c-46 0-83.34 37.34-83.34 83.33 0 46 37.34 83.34 83.34 83.34h666.66c46 0 83.34-37.34 83.34-83.34Z"/>
+    <use href="#groove_pool" x="5044.95" y="1988.97"/>
+  </g>
+  <g id="Groove">
+    <path class="box--class" d="M6708.33 4583.33c0-22.99-18.67-41.66-41.66-41.66H5083.33c-22.99 0-41.66 18.67-41.66 41.66v83.34c0 22.99 18.67 41.66 41.66 41.66h1583.34c22.99 0 41.66-18.67 41.66-41.66v-83.34Z"/>
+    <use href="#Groove" x="5711.03" y="4660.82"/>
+  </g>
+  <g serif:id="cue_points (Song)" id="cue_points--Song">
+    <path class="box--path" d="M4166.67 1958.33c0-45.99-37.34-83.33-83.34-83.33h-666.66c-46 0-83.34 37.34-83.34 83.33 0 46 37.34 83.34 83.34 83.34h666.66c46 0 83.34-37.34 83.34-83.34Z"/>
+    <use href="#cue_points" x="3449.95" y="1988.97"/>
+    <g class="path--canonical" serif:id="Path" id="Path43">
+      <path d="M3750 1791.67V1875"/>
+      <path d="M3750 2041.67v166.66"/>
+      <path d="M3708.33 2208.33 3750 2125l41.67 83.33"/>
+    </g>
+  </g>
+  <g id="CuePoint">
+    <path class="box--class" d="M4166.67 2250c0-23-18.67-41.67-41.67-41.67h-750c-23 0-41.67 18.67-41.67 41.67v83.33c0 23 18.67 41.67 41.67 41.67h750c23 0 41.67-18.67 41.67-41.67V2250Z"/>
+    <use href="#CuePoint" x="3544.31" y="2327.48"/>
+  </g>
+  <g serif:id="selected_parameter (SongView)" id="selected_parameter--SongView">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path44">
+      <path d="m13668.4 8829.17-37.5-37.5 37.5-37.5"/>
+      <path d="M15125 2375v6416.67h-1494.1" style="stroke-dasharray:8.33,25,0,0;"/>
+    </g>
+    <use href="#selected_parameter" x="13834.9" y="8822.31"/>
+  </g>
+  <g serif:id="selected_chain (SongView)" id="selected_chain--SongView">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path45">
+      <path d="m13085.1 6329.17-37.5-37.5 37.5-37.5"/>
+      <path d="M15125 6291.67h-2077.4" style="stroke-dasharray:8.33,25,0,0;stroke-dashoffset:10.42;"/>
+    </g>
+    <use href="#selected_chain" x="14017.4" y="6322.31"/>
+  </g>
+  <g serif:id="detail_clip (SongView)" id="detail_clip--SongView">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path46">
+      <path d="m9835.06 4079.17-37.5-37.5 37.5-37.5"/>
+      <path d="M15125 4041.67H9797.56" style="stroke-dasharray:8.33,25,0,0;stroke-dashoffset:10.42;"/>
+    </g>
+    <use href="#detail_clip" x="14169.9" y="4072.31"/>
+  </g>
+  <g serif:id="highlighted_clip_slot (SongView)" id="highlighted_clip_slot--SongView">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path47">
+      <path d="m8501.73 3495.83-37.5-37.5 37.5-37.5"/>
+      <path d="M15125 3458.33H8464.23" style="stroke-dasharray:8.33,25,0,0;stroke-dashoffset:10.42;"/>
+    </g>
+    <use href="#highlighted_clip_slot" x="13661.6" y="3488.97"/>
+  </g>
+  <g serif:id="selected_scene (SongView)" id="selected_scene--SongView">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path48">
+      <path d="m6751.73 2745.83-37.5-37.5 37.5-37.5"/>
+      <path d="M15125 2708.33H6714.23" style="stroke-dasharray:8.33,25,0,0;stroke-dashoffset:10.42;"/>
+    </g>
+    <use href="#selected_scene" x="14017.4" y="2738.97"/>
+  </g>
+  <g serif:id="selected_track (SongView)" id="selected_track--SongView">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path49">
+      <path d="m13668.4 2579.17-37.5-37.5 37.5-37.5"/>
+      <path d="M15125 2541.67h-1494.1" style="stroke-dasharray:8.33,25,0,0;stroke-dashoffset:10.42;"/>
+    </g>
+    <use href="#selected_track" x="14017.4" y="2572.31"/>
+  </g>
+  <g serif:id="view (Song)" id="view--Song">
+    <g class="path--canonical" serif:id="Path" id="Path50">
+      <path d="M15125 1791.67V1875"/>
+      <path d="m15162.5 2164.94-37.5 37.5-37.5-37.5"/>
+      <path d="M15125 2041.67v160.77"/>
+    </g>
+    <path class="box--path" d="M15333.3 1958.33c0-45.99-37.3-83.33-83.3-83.33h-250c-46 0-83.3 37.34-83.3 83.33 0 46 37.3 83.34 83.3 83.34h250c46 0 83.3-37.34 83.3-83.34Z"/>
+    <use href="#view" x="15005" y="1988.97"/>
+  </g>
+  <g id="SongView">
+    <path class="box--class" d="M15333.3 2250c0-23-18.6-41.67-41.6-41.67H14625c-23 0-41.7 18.67-41.7 41.67v83.33c0 23 18.7 41.67 41.7 41.67h666.7c23 0 41.6-18.67 41.6-41.67V2250Z"/>
+    <use href="#SongView" x="14734.1" y="2327.48"/>
+  </g>
+  <g serif:id="master_track (Song)" id="master_track--Song">
+    <g class="path--canonical" serif:id="Path" id="Path51">
+      <path d="M12541.7 1791.67V1875"/>
+      <path d="m12579.2 2414.94-37.5 37.5-37.5-37.5"/>
+      <path d="M12541.7 2041.67v410.77"/>
+    </g>
+    <path class="box--path" d="M13041.7 1958.33c0-45.99-37.4-83.33-83.4-83.33H12125c-46 0-83.3 37.34-83.3 83.33 0 46 37.3 83.34 83.3 83.34h833.3c46 0 83.4-37.34 83.4-83.34Z"/>
+    <use href="#master_track" x="12181.6" y="1988.97"/>
+  </g>
+  <g serif:id="return_tracks (Song)" id="return_tracks--Song">
+    <g class="path--canonical" serif:id="Path" id="Path52">
+      <path d="m10916.7 2458.33 41.6-83.33 41.7 83.33"/>
+      <path d="M10958.3 1791.67V1875"/>
+      <path d="M10958.3 2041.67v416.66"/>
+    </g>
+    <path class="box--path" d="M11458.3 1958.33c0-45.99-37.3-83.33-83.3-83.33h-833.3c-46 0-83.4 37.34-83.4 83.33 0 46 37.4 83.34 83.4 83.34h833.3c46 0 83.3-37.34 83.3-83.34Z"/>
+    <use href="#return_tracks" x="10568.3" y="1988.97"/>
+  </g>
+  <g serif:id="tracks (Song)" id="tracks--Song">
+    <g class="path--canonical" serif:id="Path" id="Path53">
+      <path d="m9291.67 2458.33 41.66-83.33 41.67 83.33"/>
+      <path d="M9333.33 1791.67V1875"/>
+      <path d="M9333.33 2041.67v416.66"/>
+    </g>
+    <path class="box--path" d="M9625 1958.33c0-45.99-37.34-83.33-83.33-83.33H9125c-45.99 0-83.33 37.34-83.33 83.33 0 46 37.34 83.34 83.33 83.34h416.67c45.99 0 83.33-37.34 83.33-83.34Z"/>
+    <use href="#tracks" x="9153.3" y="1988.97"/>
+  </g>
+  <g serif:id="visible_tracks (Song)" id="visible_tracks--Song">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path54">
+      <path d="m8000 2458.33 41.67-83.33 41.66 83.33"/>
+      <path d="M8041.67 2375v83.33"/>
+      <path d="M8041.67 1791.67V2375" style="stroke-dasharray:8.33,25,0,0;"/>
+    </g>
+    <use href="#visible_tracks" x="7621.6" y="1988.97"/>
+  </g>
+  <g serif:id="appointed_device (Song)" id="appointed_device--Song">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path55">
+      <path d="m4495.83 4831.61-37.5 37.5-37.5-37.5"/>
+      <path d="M4458.33 1791.67v3077.44" style="stroke-dasharray:8.33,25,0,0;"/>
+    </g>
+    <use href="#appointed_device" x="3978.26" y="4697.31"/>
+  </g>
+  <g serif:id="scenes (Song)" id="scenes--Song">
+    <g class="path--canonical" serif:id="Path" id="Path56">
+      <path d="m6333.33 2625 41.67-83.33 41.67 83.33"/>
+      <path d="M6375 1791.67V1875"/>
+      <path d="M6375 2041.67V2625"/>
+    </g>
+    <path class="box--path" d="M6708.33 1958.33c0-45.99-37.34-83.33-83.33-83.33h-500c-45.99 0-83.33 37.34-83.33 83.33 0 46 37.34 83.34 83.33 83.34h500c45.99 0 83.33-37.34 83.33-83.34Z"/>
+    <use href="#scenes" x="6194.97" y="1988.97"/>
+  </g>
+  <g id="Song">
+    <path class="box--class" d="M15333.3 1666.67c0-23-18.6-41.67-41.6-41.67H3375c-23 0-41.67 18.67-41.67 41.67V1750c0 23 18.67 41.67 41.67 41.67h11916.7c23 0 41.6-18.67 41.6-41.67v-83.33Z"/>
+    <use href="#Song" x="9216.56" y="1744.15"/>
+  </g>
+  <g serif:id="live_set (Root)" id="live_set--Root">
+    <g class="path--canonical" serif:id="Path" id="Path57">
+      <path d="m9370.83 1581.61-37.5 37.5-37.5-37.5"/>
+      <path d="M9333.33 1458.33v160.78"/>
+    </g>
+    <path class="box--path" d="M9666.67 1375c0-45.99-37.34-83.33-83.34-83.33h-500c-45.99 0-83.33 37.34-83.33 83.33 0 45.99 37.34 83.33 83.33 83.33h500c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#live_set" x="9093.29" y="1405.64"/>
+  </g>
+  <g serif:id="view (Application)" id="view--Application">
+    <path class="box--path" d="M2791.67 1958.33c0-45.99-37.34-83.33-83.34-83.33H2375c-45.99 0-83.33 37.34-83.33 83.33 0 46 37.34 83.34 83.33 83.34h333.33c46 0 83.34-37.34 83.34-83.34Z"/>
+    <use href="#view" x="2421.65" y="1988.97"/>
+    <g class="path--canonical" serif:id="Path" id="Path58">
+      <path d="m2579.17 2164.94-37.5 37.5-37.5-37.5"/>
+      <path d="M2541.67 2041.67v160.77"/>
+      <path d="M2541.67 1791.67V1875"/>
+    </g>
+  </g>
+  <g id="ApplicationView">
+    <path class="box--class" d="M3041.67 2250c0-23-18.67-41.67-41.67-41.67h-916.67c-22.99 0-41.66 18.67-41.66 41.67v83.33c0 23 18.67 41.67 41.66 41.67H3000c23 0 41.67-18.67 41.67-41.67V2250Z"/>
+    <use href="#ApplicationView" x="2189.59" y="2327.48"/>
+  </g>
+  <g serif:id="control_surfaces (Application)" id="control_surfaces--Application">
+    <g class="path--reference apply-mask" serif:id="Path" id="Path59">
+      <path d="M1875 1791.67v1500" style="stroke-dasharray:8.33,25,0,0;"/>
+      <path d="m1833.33 3375 41.67-83.33 41.67 83.33"/>
+      <path d="M1875 3291.67V3375"/>
+    </g>
+    <use href="#control_surfaces" x="1394.92" y="2697.31"/>
+  </g>
+  <g id="Application">
+    <path class="box--class" d="M3041.67 1666.67c0-23-18.67-41.67-41.67-41.67H1750c-23 0-41.67 18.67-41.67 41.67V1750c0 23 18.67 41.67 41.67 41.67h1250c23 0 41.67-18.67 41.67-41.67v-83.33Z"/>
+    <use href="#Application" x="2130.4" y="1744.15"/>
+  </g>
+  <g serif:id="live_app (Root)" id="live_app--Root">
+    <g class="path--canonical" serif:id="Path" id="Path60">
+      <path d="m2454.17 1581.61-37.5 37.5-37.5-37.5"/>
+      <path d="M2416.67 1458.33v160.78"/>
+    </g>
+    <path class="box--path" d="M2750 1375c0-45.99-37.34-83.33-83.33-83.33h-500c-46 0-83.34 37.34-83.34 83.33 0 45.99 37.34 83.33 83.34 83.33h500c45.99 0 83.33-37.34 83.33-83.33Z"/>
+    <use href="#live_app" x="2176.63" y="1405.64"/>
+  </g>
+  <g id="ControlSurface">
+    <path class="box--class" d="M2416.67 3416.67c0-23-18.67-41.67-41.67-41.67H666.667c-22.997 0-41.667 18.67-41.667 41.67V3500c0 23 18.67 41.67 41.667 41.67H2375c23 0 41.67-18.67 41.67-41.67v-83.33Z"/>
+    <use href="#ControlSurface" x="1187.34" y="3494.15"/>
+  </g>
+  <g serif:id="control_surfaces (Root)" id="control_surfaces--Root">
+    <g class="path--canonical" serif:id="Path" id="Path61">
+      <path d="m1166.67 3375 41.66-83.33L1250 3375"/>
+      <path d="M1208.33 1458.33V3375"/>
+    </g>
+    <path class="box--path" d="M1791.67 1375c0-45.99-37.34-83.33-83.34-83.33H708.333c-45.993 0-83.333 37.34-83.333 83.33 0 45.99 37.34 83.33 83.333 83.33h999.997c46 0 83.34-37.34 83.34-83.33Z"/>
+    <use href="#control_surfaces" x="728.255" y="1405.64"/>
+  </g>
+  <g id="Legend">
+    <g id="AIDR">
+      <use href="#AIDR" x="4291.67" y="952.482"/>
+      <circle class="icon--aidr" serif:id="Icon (AIDR)" id="Icon--AIDR-3" cx="4208.33" cy="916.667" r="41.667"/>
+    </g>
+    <g serif:id="Drum Racks" id="Drum-Racks">
+      <use href="#DrumRacks" x="4291.67" y="785.815"/>
+      <path class="icon--drum_racks" serif:id="Icon (Drum Racks)" id="Icon--Drum-Racks-3" d="M4254.17 708.333a4.17 4.17 0 0 0-4.17-4.166h-83.33a4.163 4.163 0 0 0-4.17 4.166v83.334a4.163 4.163 0 0 0 4.17 4.166H4250a4.17 4.17 0 0 0 4.17-4.166v-83.334Zm-50 79.167v-33.333h-33.34V787.5h33.34Zm41.66-33.333h-33.33V787.5h33.33v-33.333Zm-75-8.334h33.34V712.5h-33.34v33.333Zm41.67-33.333v33.333h33.33V712.5h-33.33Z"/>
+    </g>
+    <g serif:id="Master Track" id="Master-Track">
+      <use href="#MasterTrack" x="4291.67" y="619.149"/>
+      <path class="icon--master_track" serif:id="Icon (Master Track)" id="Icon--Master-Track-3" d="M4254.17 541.667a4.17 4.17 0 0 0-4.17-4.167h-83.33a4.164 4.164 0 0 0-4.17 4.167V625a4.164 4.164 0 0 0 4.17 4.167H4250a4.17 4.17 0 0 0 4.17-4.167v-83.333Zm-83.34 79.166h35.96l-9.71-26.246-26.25-9.712v35.958Zm48.76-26.246-9.71 26.246h35.95v-35.958l-26.24 9.712Zm0-22.507 26.24 9.712v-35.959h-35.95l9.71 26.247Zm-48.76 9.712 26.25-9.712 9.71-26.247h-35.96v35.959Z"/>
+    </g>
+    <g serif:id="list (Reference)" id="list--Reference">
+      <g class="path--reference" serif:id="Path" id="Path62">
+        <path d="M3833.33 666.667V875" style="stroke-dasharray:8.33,25,0,0;"/>
+        <path d="M3833.33 875v83.333V875Z"/>
+        <path d="M3791.67 958.333 3833.33 875l41.67 83.333"/>
+      </g>
+      <use href="#list" x="3723.32" y="611.42"/>
+    </g>
+    <g serif:id="single (Reference)" id="single--Reference">
+      <g class="path--reference" serif:id="Path" id="Path63">
+        <path d="m3412.5 917.776-37.5 37.5-37.5-37.5"/>
+        <path d="M3375 666.667v288.609" style="stroke-dasharray:8.33,25,0,0;"/>
+      </g>
+      <use href="#single" x="3209.97" y="611.42"/>
+    </g>
+    <g serif:id="list (Canonical)" id="list--Canonical">
+      <g class="path--canonical" serif:id="Path" id="Path64">
+        <path d="M2791.67 666.667v291.666"/>
+        <path d="M2750 958.333 2791.67 875l41.66 83.333"/>
+      </g>
+      <g id="list">
+        <path class="box--path" d="M3000 583.333c0-45.993-37.34-83.333-83.33-83.333h-250c-46 0-83.34 37.34-83.34 83.333 0 45.993 37.34 83.334 83.34 83.334h250c45.99 0 83.33-37.341 83.33-83.334Z"/>
+        <use href="#list" x="2671.65" y="613.973"/>
+      </g>
+    </g>
+    <g serif:id="single (Canonical)" id="single--Canonical">
+      <g class="path--canonical" serif:id="Path" id="Path65">
+        <path d="m2245.83 914.941-37.5 37.5-37.5-37.5"/>
+        <path d="M2208.33 666.667v285.774"/>
+      </g>
+      <g id="single">
+        <path class="box--path" d="M2458.33 583.333c0-45.993-37.34-83.333-83.33-83.333h-333.33c-46 0-83.34 37.34-83.34 83.333 0 45.993 37.34 83.334 83.34 83.334H2375c45.99 0 83.33-37.341 83.33-83.334Z"/>
+        <use href="#single" x="2028.3" y="613.973"/>
+      </g>
+    </g>
+    <g serif:id="API Class Name" id="API-Class-Name">
+      <path class="box--class" d="M1791.67 552.083c0-28.745-23.34-52.083-52.09-52.083H885.417c-28.746 0-52.084 23.338-52.084 52.083V656.25c0 28.746 23.338 52.083 52.084 52.083h854.163c28.75 0 52.09-23.337 52.09-52.083V552.083Z"/>
+      <use href="#APIClassName" x="945.728" y="639.982"/>
+    </g>
+    <g serif:id="Legend Headings" id="Legend-Headings">
+      <use href="#SpecialPaths" x="4124.998" y="420"/>
+      <use href="#ReferencePaths" x="3169.232" y="420"/>
+      <use href="#CanonicalPaths" x="2073.391" y="420"/>
+      <use href="#LiveObjectClasses" x="828.991" y="420"/>
+    </g>
+    <g class="box--title " serif:id="Legend Border" id="Legend-Border">
+      <path class="apply-mask" d="M6041.67 250c0-22.996-18.67-41.667-41.67-41.667H666.667C643.67 208.333 625 227.004 625 250v750c0 23 18.67 41.67 41.667 41.67H6000c23 0 41.67-18.67 41.67-41.67V250Z"/>
+      <path d="M1291.67 166.667C1291.67 143.67 1273 125 1250 125H750c-22.996 0-41.667 18.67-41.667 41.667V250c0 22.996 18.671 41.667 41.667 41.667h500c23 0 41.67-18.671 41.67-41.667v-83.333Z"/>
+    </g>
+    <use href="#legend-title" x="800.842" y="246.25"/>
+  </g>
+</svg>
